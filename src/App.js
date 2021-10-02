@@ -1,3 +1,4 @@
+import React from 'react';
 import { avatar, name, tag, location, stats } from './Profile/user.json';
 import statisticalData from './Statistics/statistical-data.json';
 import friends from './FriendList/friends.json';

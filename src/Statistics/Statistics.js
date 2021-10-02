@@ -1,3 +1,4 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 import { Section, List, Item } from './statisticsStyle';
 

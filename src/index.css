@@ -78,3 +78,6 @@ select {
     scroll-behavior: auto !important;
   }
 }
+.transactionRow {
+  background-color: #123456;
+}
