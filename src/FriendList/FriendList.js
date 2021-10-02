@@ -1,19 +1,29 @@
+import styles from './FriendList.module.css';
 import PropTypes from 'prop-types';
 
 export default function FriendList({ friends }) {
   return (
-    <ul className="friend-list">
+    <ul className={styles.friends}>
       {friends.map(friend => {
         return (
-          <li className="item" key={friend.id}>
-            <span className="status">{friend.isOnline}</span>
+          <li className={styles.item} key={friend.id}>
+            <span
+              className={styles.status}
+              style={{
+                backgroundColor: friend.isOnline
+                  ? 'rgb(26, 143, 69)'
+                  : 'rgb(206, 89, 42)',
+              }}
+            >
+              {friend.isOnline}
+            </span>
             <img
-              className="avatar"
+              className={styles.avatar}
               src={friend.avatar}
               alt="Аватарка"
               width="48"
             />
-            <p className="name">{friend.name}</p>
+            <p className={styles.name}>{friend.name}</p>
           </li>
         );
       })}
